@@ -2,7 +2,12 @@ package radius
 
 import (
 	"testing"
+	"log"
 )
+
+func TestCreatePacket(t *testing.T) {
+	log.Println(DefaultAuthenticator())
+}
 
 func TestServerStart(t *testing.T) {
 	c := make(chan Packet)
